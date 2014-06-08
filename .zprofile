@@ -1,0 +1,14 @@
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/git/bin:$PATH
+export PATH=/usr/local/go/bin:$PATH
+
+export GOPATH=/Users/takagi/workspace/test/go
+#export GOPATH=/Users/takagi/workspace/test/go/src/go-blog/:$GOPATH
+
+export GOROOT=/usr/local/go
+#GOPATH="$GOPATH:/Users/takagi/workspace/test/go"
+export PATH="$PATH:$GOPATH/bin"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export RBENV_ROOT=/usr/local/var/rbenv
+export GOENVTARGET=$HOME/.goenvtarget
+export PATH=$GOENVTARGET:$PATH
