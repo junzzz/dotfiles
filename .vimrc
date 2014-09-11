@@ -87,6 +87,7 @@ NeoBundle 'joonty/vdebug'
 NeoBundle 'tomasr/molokai'
 NeoBundle "tpope/vim-rails"
 NeoBundle "soh335/vim-symfony"
+NeoBundle 'mattn/flappyvird-vim'
 
 filetype plugin indent on     " Required!
 " Installation check.

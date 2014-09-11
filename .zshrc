@@ -48,13 +48,13 @@ ZSH_THEME="wedisagree"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git, bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/junichi_takagi/.goenvtarget:/usr/local/var/rbenv/shims:/usr/local/go/bin:/usr/local/git/bin:/usr/local/bin:/Users/junichi_takagi/.goenvtarget:/Users/junichi_takagi/.rbenv/shims:/usr/local/go/bin:/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/go/bin:/Users/junichi_takagi/.pyenv/shims:/Users/junichi_takagi/.pyenv/bin:/Users/junichi_takagi/.rbenv/shims:/Users/takagi/workspace/test/go/bin:/Users/junichi_takagi/.php-build/bin:/Users/takagi/workspace/test/go/bin"
+export PATH="/usr/local/var/rbenv/shims:~/.goenvtarget:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/go/bin:~/workspace/test/go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -247,7 +247,8 @@ esac
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-export PATH=$PATH:$HOME/.php-build/bin
+alias vimr='env LANG=ja_JP.UTF-8 /Applications/VimR.app/Contents/MacOS/VimR "$@"'
+# export PATH=$PATH:$HOME/.php-build/bin
 alias ctags="`brew --prefix`/bin/ctags"
 
 alias g='git'
@@ -256,5 +257,6 @@ fpath=(~/.zsh/completion $fpath)
 autoload -U compinit
 compinit -u
 
-source /Users/junichi_takagi/.zprofile
+source ~/.zprofile
 
+setopt nonomatch
